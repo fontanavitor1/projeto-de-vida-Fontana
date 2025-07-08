@@ -35,7 +35,7 @@ function calcularTempo(tempoObjetivo) {
     horas %= 24;
 
     if (tempoFinal > 0) {
-        return [dias, horas, minutos, segundor]
+        return [dias, horas, minutos, segundos]
     } else {
         return [0, 0, 0, 0];
     }
@@ -48,7 +48,6 @@ function atualizaCronometro() {
         document.getElementById("min" + i).textContent = calcularTempo(tempos[i])[2];
         document.getElementById("seg" + i).textContent = calcularTempo(tempos[i])[3];
     }
-
 }
 
 function comecaCronometro() {
